@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Concret Blocos</title>
+  <meta name="description" content="Fale conosco! Solicite um orçamento sem compromisso, tire suas dúvidas técnicas ou envie sua mensagem para a equipe Concret Blocos.">
+  <link rel="icon" type="image/png" href="/wp-content/uploads/2025/07/cropped-logo_concret_blocos.png">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="/" class="logo">
+        <img src="/wp-content/uploads/2025/07/cropped-logo_concret_blocos.png" alt="Concret Blocos Logo">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle Menu" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/empresa.html" class="nav-link">Empresa</a></li>
+        <li><a href="/produtos.html" class="nav-link">Produtos</a></li>
+        <li><a href="/contato.html" class="nav-link active">Contato</a></li>
+        <li>
+          <a href="https://wa.me/5511963339685?text=Ol%C3%A1%21+Gostaria+de+solicitar+um+or%C3%A7amento." target="_blank" class="btn btn-accent" id="nav-quote-btn">
+            <i class="fab fa-whatsapp"></i> Orçamento
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" id="contato-hero">
+    <div class="container">
+      <h1>Contato</h1>
+      <div class="breadcrumbs">
+        <a href="/">Home</a> / <span>Contato</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact-details-section">
+    <div class="container">
+      <div class="contact-section">
+        
+        <!-- Contact Info Panel -->
+        <div class="contact-info-panel" id="contact-info">
+          <h2>A Concretblocos valoriza sua parceria</h2>
+          <p>Entre em contato para obter informações detalhadas sobre nossos produtos, solicitar um orçamento sem compromisso ou esclarecer dúvidas para os seus projetos de construção. Estamos prontos para construir juntos!</p>
+          
+          <div class="contact-info-list">
+            <!-- Item 1: Phone -->
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="info-text">
+                <h4>Telefone / WhatsApp</h4>
+                <p>11 96333-9685</p>
+              </div>
+            </div>
+
+            <!-- Item 2: Email -->
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-text">
+                <h4>E-mail</h4>
+                <p>contato@concretblocos.com.br</p>
+              </div>
+            </div>
+
+            <!-- Item 3: Address 1 -->
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-text">
+                <h4>Fábrica 1 (Cotia)</h4>
+                <p>Rua Paulino Nascimento, 536 - Jardim Elias - Cotia - CEP 06720-456</p>
+              </div>
+            </div>
+
+            <!-- Item 4: Address 2 -->
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-text">
+                <h4>Fábrica 2 (Vargem Grande Paulista)</h4>
+                <p>Rua Avelino de Oliveira, 355 - Jardim Elias - Vargem Grande Paulista - SP</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Panel -->
+        <div class="contact-form-panel" id="contact-form-container">
+          <h3>Envie uma Mensagem</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Nome Completo</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="seu.email@exemplo.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Telefone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="(11) 99999-9999" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Sua Mensagem</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Escreva aqui detalhes sobre o seu projeto ou os produtos que necessita" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; height: 50px;">
+              <i class="fas fa-paper-plane"></i> Enviar Mensagem
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="map-container" id="google-maps-embed">
+        <!-- Google Map Iframe centered around Cotia / Vargem Grande Paulista -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14614.94589993356!2d-46.99427339798782!3d-23.68541243171804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf5d3a58e0a827%3A0xe21f7c00e123caad!2sVargem+Grande+Paulista+-+SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <a href="/" class="footer-logo">
+          <img src="/wp-content/uploads/2025/07/cropped-logo_concret_blocos.png" alt="Concret Blocos Logo">
+        </a>
+        <p>Qualidade em Pré-Moldados para sua obra. A Concretblocos oferece produtos e soluções construtivas com a expertise que você precisa.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Links Úteis</h3>
+        <ul class="footer-links">
+          <li><a href="/" id="f-link-home">Home</a></li>
+          <li><a href="/empresa.html" id="f-link-empresa">Empresa</a></li>
+          <li><a href="/produtos.html" id="f-link-produtos">Produtos</a></li>
+          <li><a href="/contato.html" id="f-link-contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Nossos Produtos</h3>
+        <ul class="footer-links">
+          <li><a href="/bloco-estrutural-14-19-39.html" id="f-prod-bloco-14">Bloco Estrutural (14x19x39)</a></li>
+          <li><a href="/bloco-estrutural-19-19-39.html" id="f-prod-bloco-19">Bloco Estrutural (19x19x39)</a></li>
+          <li><a href="/tubo-pluvial.html" id="f-prod-tubo">Tubo pluvial</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contato</h3>
+        <ul class="footer-contact-list">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Rua Avelino de Oliveira, 355 - Jardim Elias - Vargem Grande Paulista - SP</span>
+          </li>
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <span>11 96333-9685</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>contato@concretblocos.com.br</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Concret Blocos. Todos os direitos reservados.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-icon" id="soc-fb"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" id="soc-ig"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon" id="soc-ln"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5511963339685?text=Ol%C3%A1%21+Gostaria+de+solicitar+um+or%C3%A7amento." target="_blank" class="whatsapp-float" id="whatsapp-float-btn">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Fale Conosco no WhatsApp</span>
+  </a>
+
+  <!-- Custom Scripts -->
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
