@@ -215,14 +215,89 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, rgba(4, 19, 41, 0.95) 0%, rgba(28, 133, 232, 0.8) 100%), url('/wp-content/uploads/2025/07/bloco_estrutural_19x19x39.png');
-  background-size: cover;
-  background-position: center;
+  position: relative;
   color: var(--light);
   padding: 8rem 0 6rem;
   text-align: left;
-  position: relative;
   overflow: hidden;
+  background-color: var(--dark);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(4, 19, 41, 0.8) 0%, rgba(28, 133, 232, 0.6) 100%);
+  z-index: 1;
+}
+
+.hero-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  z-index: 0;
+  animation: slideshowAnim 25s linear infinite;
+  will-change: transform, opacity;
+}
+
+/* Adjust keyframe delays for each slide */
+.hero-slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.hero-slide:nth-child(2) {
+  animation-delay: 5s;
+}
+.hero-slide:nth-child(3) {
+  animation-delay: 10s;
+}
+.hero-slide:nth-child(4) {
+  animation-delay: 15s;
+}
+.hero-slide:nth-child(5) {
+  animation-delay: 20s;
+}
+
+@keyframes slideshowAnim {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  4% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero::after {
@@ -234,6 +309,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100px;
   background: linear-gradient(to top, var(--gray-100), transparent);
   pointer-events: none;
+  z-index: 3;
 }
 
 .hero-content {
